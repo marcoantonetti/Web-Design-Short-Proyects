@@ -12,3 +12,6 @@ This html elements had being positioned and style with CSS. They are resizeable 
 
 This small proyect further increases my admiration of html and the structure and hierarchy of its elements. Once the elements are 
 structured, I understood more about the positioning of them with css.
+
+
+Finally there is a js file because I initially wanted to add the timeline's items with a script, but adding a strong element inside a dinamically created li element its quite struggling. Nevertheless in that js file you can see the commented script
