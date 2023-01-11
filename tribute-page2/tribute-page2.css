@@ -71,6 +71,37 @@ h1 {
     
   }
 
+/*Position and color hovering of social media icons*/
+#top-right-media{
+    
+    position: absolute;
+    top: 4%;
+    right: 0%;
+    
+}
+
+.fa-brands{
+    margin-right: 0.5em;
+    text-decoration: none;
+    color: white;
+}
+
+.fa-brands:hover {
+
+    color: var( --hover-color);
+    cursor: pointer;
+    transform: scale(1.5);
+
+}
+
+/*Animation that flips the icons three times and in order*/
+.delay-spin {
+    animation-name: flip-icon;
+    animation-duration: 3s;
+    animation-delay: calc( var(--order)*200ms);
+    animation-iteration-count: 3;  
+}
+
 /*Position and style of the quote*/
 blockquote{
 
@@ -136,34 +167,6 @@ button:hover{
   }
 }
  
-/*Position and color hovering of social media icons*/
-#top-right-media{
-    
-    position: absolute;
-    top: 4%;
-    right: 0%;
-    
-}
-
-.fa-brands{
-    margin-right: 0.5em;
-}
-
-.fa-brands:hover {
-
-    color: var( --hover-color);
-    cursor: pointer;
-    transform: scale(1.5);
-
-}
-
-/*Animation that flips the icons three times and in order*/
-.delay-spin {
-    animation-name: flip-icon;
-    animation-duration: 3s;
-    animation-delay: calc( var(--order)*200ms);
-    animation-iteration-count: 3;  
-}
 
 @keyframes flip-icon {
     50% {
@@ -265,6 +268,12 @@ h2{
 
     border-radius: 5%;
     filter: brightness(95%);
+
+}
+
+albums:hover{
+    box-shadow: 5px 5px 20px rgba(5, 197, 204, 0.358),
+                 -5px -5px 20px rgba(5, 197, 204, 0.358);
 
 }
 
