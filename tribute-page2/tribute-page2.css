@@ -1,0 +1,349 @@
+/* Lora font */
+@import url(https://fonts.googleapis.com/css?family=Lora);
+/* Lato font */
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+
+*{
+    box-sizing: border-box;
+
+    /*box-shadow variables to display a color-background for the images in the about section*/
+    --box-shadow-bg-screen: -0.3em 0em #1267e6, 
+                            -0.3em -16.2em #1267e6,
+                             0em -1em #1267e6,
+                             -15.2em -10em #1267e6;
+
+    --box-shadow-sm-screen: 0em -10em #1267e6, 
+                            0em -20em #1267e6,
+                            0em -40em #1267e6;
+
+
+}
+
+body{
+    background-color:black;
+    background-image:
+    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+
+}
+
+/* CSS for the section-main-image of the page*/
+#section-main-image{
+
+    background: url(grand-image4.jpg) no-repeat scroll;
+    background-size: 100%;
+    min-height: 100vh; /*Ocupa el alto total de la ventana*/
+
+}
+
+/*Positioning and style of title and subtitle*/
+#top-left{
+
+    position: absolute;
+    left: 2%;
+
+}
+
+h1 {
+
+    font-family: "Lora-Bold";
+    font-size: 4.5rem;
+    text-shadow: 2px 2px #000000;
+    margin-top: 1rem;
+
+  }
+
+#subtitle {
+
+    margin-top: -3.5rem;
+    padding-left: 0.6rem;
+    font-family: "Lato-Light";
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px #000000;
+    
+  }
+
+/*Position and style of the quote*/
+blockquote{
+
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+
+    max-width: 50%; 
+    bottom: 1px;
+    left: 1px;
+
+    font-family: papyrus;
+    font-size: 1.1em;
+
+    background-color: rgba(5, 5, 3, 0.154);
+    border-radius: 8%;
+}
+
+/*Button positioning, hover and animation*/
+button{
+
+    position: absolute;
+    bottom: 2rem;
+    right: 1rem;
+    border-radius: 4px;  
+    padding: 8px 16px;
+
+    cursor: pointer;  
+    background-color: #87abd1;  
+    
+
+}
+
+button:hover{
+    background-image:     linear-gradient(
+
+       to right, 
+       #E7484F,
+       #E7484F 16.65%,
+       #F68B1D 16.65%,
+       #F68B1D 33.3%,
+       #FCED00 33.3%,
+       #FCED00 49.95%,
+       #009E4F 49.95%,
+       #009E4F 66.6%,
+       #00AAC3 66.6%,
+       #00AAC3 83.25%,
+       #732982 83.25%,
+       #732982 100%,
+       #E7484F 100%
+       
+      
+      
+      
+     );
+   animation:slidebg 2s alternate-reverse infinite;
+   transform: scale(1.1);
+ }
+
+ @keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+ 
+/*Position and color hovering of social media icons*/
+#top-right-media{
+    
+    position: absolute;
+    top: 4%;
+    right: 0%;
+    
+}
+
+.fa-brands{
+    margin-right: 0.5em;
+}
+
+.fa-brands:hover {
+
+    color: var( --hover-color);
+    cursor: pointer;
+    transform: scale(1.5);
+
+}
+
+/*Animation that flips the icons three times and in order*/
+.delay-spin {
+    animation-name: flip-icon;
+    animation-duration: 3s;
+    animation-delay: calc( var(--order)*200ms);
+    animation-iteration-count: 3;  
+}
+
+@keyframes flip-icon {
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+
+
+
+/*CSS for the about section */
+
+h2{
+    font-size: 1.8em;
+        font-family: papyrus, cursive;
+
+}
+#section-about{
+    margin-left: 2%;
+    }
+
+.about-text{
+    float: left;
+    width: 59%; /* That free 1% so it doesnt overlap with the images*/
+    position: relative;
+    font-size: 120%;
+    font-family: papyrus, cursive;
+   
+}
+
+.about-text::first-letter {
+    font-size: 200%;
+    color: #12a6e6cd  ;
+    font-family: Brush Script MT, Brush Script Std, cursive	;
+
+}
+
+
+#images-container{
+
+    float:right;
+    width: 40%;
+}
+
+.image{
+
+    position: relative;
+    max-height: 15em;
+    min-height: 16em;
+    min-width: 15em;
+    max-width: 15em;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#bot-left-image{
+    filter:sepia(90%);
+}
+
+#bot-right-image{
+    filter: grayscale(60%);
+    filter:sepia(60%);
+    /*Using multiple shadows to make a background color effect*/
+    box-shadow: var(--box-shadow-bg-screen);        
+    
+    z-index: -1;
+
+
+}
+
+.top-row-image{
+    filter: sepia(40%);
+}
+
+
+
+
+/*CSS for the discography section.*/
+#discography{
+    clear: both;
+    margin-left:2%;
+}
+
+/*Could use flex fore more elements, but I rather practice CSS without it*/
+#albums-container{
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-evenly;
+}
+
+.albums{
+    max-height: 15em;
+    min-height: 15em;
+    min-width: 15em;
+    max-width: 15em;
+
+    border-radius: 5%;
+    filter: brightness(95%);
+
+}
+
+/*Moving first/yellow album to the left so that the wrap container doesnt generate 2 rows*/
+#yellow-album{
+    margin-left: -2em;
+}
+
+.album-caption{
+    text-align: center;
+}
+/*en media queries usa variables y quizas display block*/
+
+@media all and (max-width: 600px) {
+
+    /*Positioning title and subtitle at either end of the main image*/
+    h1{
+        font-size: 2.5rem;
+        margin-top: 0px;
+    }
+
+    #subtitle{
+        font-size: 1rem;
+        margin-top: 160px;
+    }
+
+    /*Positioning the quote below the main image*/
+    blockquote{
+        top: 140px;
+        max-width: 80%;
+        margin: 100px 30px 150px 30px ;
+        padding-right: 10px;
+
+    }
+
+    #quote{
+        padding-right: 30px;
+    }
+
+
+    #yellow-album{
+        margin-left: 0em;
+    }
+
+    /*Button positioning*/
+    button{
+    position: relative;
+    top: 640px;
+    left: 60px;
+}
+
+#about-h2{
+    margin-top: 100px ;
+}
+}
+
+
+@media all and (max-width: 1250px) {
+
+ /*Changing box shadows to adapt smaller screen*/
+ #bot-right-image{
+    box-shadow: var(--box-shadow-sm-screen);
+}
+}
+
+
+
+@media all and (max-width: 750px) {
+
+    /*Positioning media icons to the right of the quote*/
+    #top-right-media{
+        width: 12%;
+        top: 280px;
+
+    }
+    .fa-brands{
+        margin-bottom: 0.4em;
+    }
+
+   }
+
+  
