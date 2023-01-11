@@ -1,0 +1,14 @@
+In this proyect I created a second tribute page, more advance than the first.
+
+I keep learning about HTML elements, their semantic meaning and structures.
+
+It has three sections: The first has a background image with elements over it (title, subtitle, media icons, blockquote).
+                       Secondly there is an about section about the artist with a text and images.
+                       Thirdly there is a discography section with 4 albums.
+                       
+I styled the HTML with CSS to make it attractive and simple. I learned knowledge about background-image positioning, image design, color theory, practical use of
+the shadow-box property, pseudo-classes, css flex, text and typography edition, css variables and a better comprehension of CSS writing to make it easier to read.
+
+Lastly I added media queries to make it responsive.
+
+My following steps will be a survey form proyect, and later an e-commerce.
