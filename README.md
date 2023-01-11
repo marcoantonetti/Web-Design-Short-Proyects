@@ -11,6 +11,6 @@ Furthermore styling my HTML with CSS allowed me to learn a lot about both langua
 
 Now that I have experience with CSS and HTML I will add java script in future proyects. I learned JS and got 2 certifications, I will use it in my proyects to make them dynamic.
 
-Finally I will learn REACT to solidigy my front-end capacities. 
+Finally I will learn REACT to solidify my front-end capacities. 
 
 I will also learn SQL to have some database knowledge.
