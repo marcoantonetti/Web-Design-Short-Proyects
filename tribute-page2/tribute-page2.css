@@ -271,7 +271,7 @@ h2{
 
 }
 
-albums:hover{
+.albums:hover{
     box-shadow: 5px 5px 20px rgba(5, 197, 204, 0.358),
                  -5px -5px 20px rgba(5, 197, 204, 0.358);
 
