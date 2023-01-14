@@ -14,3 +14,7 @@ Now that I have experience with CSS and HTML I will add java script in future pr
 Finally I will learn REACT to solidify my front-end capacities. 
 
 I will also learn SQL to have some database knowledge.
+
+Tribute Page 1 - A simple page of Leonardo Da Vinci
+
+Tribute page 2 - A more complex page about Gustavo Ceratti
