@@ -1,9 +1,12 @@
-# Web-Design-Short-Proyects
-Some small web design proyects using CSS and HTML. Some exersices are from the ''Responsive Web Design Projects Certification' from Free Code Camp. 
-Others its just me practicing with CSS. 
+# Web-Design-Tribute-Pages
 
-I had learned a lot about positioning using margins, paddings, width, height, floats, css flex and css grid. Also I learned about animations, color theory, box-shadows,
-pseudo-classes. As well us types of position, measuring units and media queries.
+In order to master HTML and CSS and move away from the basics I started doing several proyects. In this folder you can see two tribute pages.
+
+The first one is from the ''Responsive Web Design Projects Certification' from Free Code Camp. 
+The second one is a more complex one to further increase my knowledge.
+
+Here I learned a lot about positioning using margins, paddings, width, height, floats, css flex and css grid. Also I learned about animations, color theory, box-shadows,
+pseudo-classes. As well as types of position, measuring units and media queries to make responsive designs.
 
 With HTML I learned about the semantic meaning of the elements and their block or inline structure. That provides a solid skeleton for CSS to work with.
 
