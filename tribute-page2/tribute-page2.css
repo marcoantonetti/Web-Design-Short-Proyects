@@ -36,7 +36,7 @@ body {
 
 /* CSS for the section-main-image of the page*/
 #section-main-image {
-
+    position: st;
     background: url(grand-image4.jpg) no-repeat scroll;
     background-size: 100%;
     min-height: 100vh;
@@ -137,10 +137,11 @@ blockquote {
 button {
 
     position: absolute;
-    bottom: 2rem;
-    right: 1rem;
+    bottom: 4rem;
+    right: 5rem;
     border-radius: 4px;
     padding: 8px 16px;
+    transform: scale(1.2);
 
     cursor: pointer;
     background-color: #87abd1;
@@ -270,7 +271,7 @@ h2 {
 
 
 .albums:hover {
-    box-shadow: 5px 5px 20px rgba(5, 197, 204, 0.358),
+     box-shadow: 5px 5px 20px rgba(5, 197, 204, 0.358),
         -5px -5px 20px rgba(5, 197, 204, 0.358);
 
 }
@@ -285,7 +286,7 @@ h2 {
 
 /*en media queries usa variables y quizas display block*/
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
 
     /*Positioning title and subtitle at either end of the main image*/
     h1 {
@@ -300,9 +301,9 @@ h2 {
 
     /*Positioning the quote below the main image*/
     blockquote {
-        top: 110px;
+        top: 150px;
         max-width: 80%;
-        margin: 100px 30px 150px 30px;
+        margin: 150px 30px 150px 30px;
         padding-right: 10px;
 
     }
@@ -311,13 +312,12 @@ h2 {
     /*Button positioning below the quote*/
     button {
         position: relative;
-        top: 640px;
-        left: 50px;
+        top: 650px;
+        left: 90px;
     }
 
-    #about-h2 {
-        margin-top: 160px;
-    }
+
+  
 }
 
 @media (max-width: 400px) {
@@ -343,7 +343,7 @@ h2 {
     /*Positioning media icons to the right of the quote*/
     #top-right-media {
         width: 12%;
-        top: 280px;
+        top: 310px;
 
     }
 
@@ -352,3 +352,5 @@ h2 {
     }
 
 }
+
+/*end*/
