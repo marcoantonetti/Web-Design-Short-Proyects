@@ -3,15 +3,14 @@
 /* Lato font */
 @import url(https://fonts.googleapis.com/css?family=Lato);
 
-
 * {
     box-sizing: border-box;
 
     /*box-shadow variables to display a color-background for the images in the about section*/
     --box-shadow-bg-screen: -0.3em 0em #1267e6,
-        -0.3em -14.2em #1267e6,
+        -0.3em -16.2em #1267e6,
         0em -1em #1267e6,
-        -14.2em -10em #1267e6;
+        -16.2em -10em #1267e6;
 
     --box-shadow-sm-screen: 0em -10em #1267e6,
         0em -20em #1267e6,
@@ -36,11 +35,13 @@ body {
 
 /* CSS for the section-main-image of the page*/
 #section-main-image {
-    position: st;
     background: url(grand-image4.jpg) no-repeat scroll;
-    background-size: 100%;
+   background-size: 100%;
     min-height: 100vh;
+    width: 100vw;
     /*Ocupa el alto total de la ventana*/
+
+
 
 }
 
@@ -127,7 +128,7 @@ blockquote {
     left: 1px;
 
     font-family: papyrus;
-    font-size: 1.1em;
+    font-size: 1.4em;
 
     background-color: rgba(5, 5, 3, 0.154);
     border-radius: 8%;
@@ -187,9 +188,9 @@ h2 {
 
 .about-text {
     float: left;
-    width: 50%;
+    width: 55%;
     position: relative;
-    font-size: 120%;
+    font-size: 1.5rem;
     font-family: papyrus, cursive;
 
 }
@@ -206,16 +207,17 @@ h2 {
 
     float: right;
     /*That free 5% is to leave a gap between the images and text*/
-    width: 45%;
+    width: 40%;
+    margin-top: 40px;
 }
 
 .image {
 
     position: relative;
-    max-height: 14em;
-    min-height: 14em;
-    min-width: 14em;
-    max-width: 14em;
+    max-height: 16em;
+    min-height: 16em;
+    min-width: 16em;
+    max-width: 16em;
     z-index: 1;
     overflow: hidden;
 }
@@ -286,7 +288,7 @@ h2 {
 
 /*en media queries usa variables y quizas display block*/
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 850px) {
 
     /*Positioning title and subtitle at either end of the main image*/
     h1 {
@@ -295,13 +297,13 @@ h2 {
     }
 
     #subtitle {
-        font-size: 1rem;
+        font-size: 1.3rem;
         margin-top: -30px;
     }
 
     /*Positioning the quote below the main image*/
     blockquote {
-        top: 150px;
+        top: 110px;
         max-width: 80%;
         margin: 150px 30px 150px 30px;
         padding-right: 10px;
@@ -316,15 +318,23 @@ h2 {
         left: 60px;
     }
 
+    #section-about{
+        padding-top: 300px;
+
+    }
 
   
 }
 
-@media (max-width: 400px) {
+@media  (max-width: 400px) {
     #subtitle {
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-top: 120px;
         text-align: center;
+    }
+
+    #section-main-image{
+        width: 100vw;
     }
 }
 
